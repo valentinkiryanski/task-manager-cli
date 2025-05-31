@@ -40,6 +40,7 @@ USE task_manager;
 CREATE TABLE tasks (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(50) NOT NULL,
+  due_date DATE DEFAULT CURRENT_DATE,
   is_completed BOOLEAN DEFAULT FALSE
 );
 ```
